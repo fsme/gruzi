@@ -6,9 +6,11 @@
 INSTALL=	cp
 WEBDIR=		$(HOME)/www
 
-all: $(WEBDIR)/favicon.ico $(WEBDIR)/img/kia-besta.jpg $(WEBDIR)/img/kia-besta.gif\
+all:
+
+install: $(WEBDIR)/favicon.ico $(WEBDIR)/img/kia-besta.jpg $(WEBDIR)/img/kia-besta.gif\
 	$(WEBDIR)/img/scheme.gif $(WEBDIR)/img/mobi.jpg $(WEBDIR)/index.html\
-		$(WEBDIR)/pda/index.html $(WEBDIR)/robots.txt
+	$(WEBDIR)/pda/index.html $(WEBDIR)/robots.txt
 
 $(WEBDIR)/favicon.ico: favicon.ico
 	$(INSTALL) $? $@
