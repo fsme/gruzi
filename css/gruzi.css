@@ -1,0 +1,83 @@
+BODY {
+	text-align: Left;
+	font-family: "Georgia","Arial Black";
+	font-size: 22pt;
+	font-style: Normal;
+	font-weight: Bold;
+	background-color: #FFFF9B;
+	color: #0036B3;
+	margin-left: 10%;
+	margin-right: 5%;
+}
+
+SUB {
+	font-style: Italic;
+	font-weight: Bold;
+	font-family: "Comic Sans MS", "Georgia", "Tahoma";
+}
+
+UL LI {
+	font-style: Italic;
+	list-style-image: url(img/check.png);
+}
+
+.header {
+	font-family: "Arial Black";
+	font-size: 32pt;
+}
+
+.link {
+	font-family: "Lucida Console", "Courier New";
+	font-style: Normal;
+	font-weight: Bold;
+	font-size: 32pt;
+	text-decoration: none;
+}
+
+A.email {
+	text-decoration: none;
+	font-family: "Lucida Console";
+	font-size: 16pt;
+}
+
+.ext {
+	font-size: 10pt;
+	font-family: "Arial";
+	font-style: Italic;
+}
+
+.vizitka {
+	font-family: "Lucida Console", "Courier New";
+	font-style: Normal;
+	text-align: Left;
+	font-size: 9pt;
+	position:absolute; top:45%; left:80%;
+	background-color: #F0FFF0;
+}
+
+.tel {
+	font-family: "Georgia";
+	font-size: 38pt;
+	font-weight: Bold;
+}
+
+A {
+	color: #6A7FFF;
+	text-decoration: none;
+}
+
+
+A:hover {
+	text-decoration: underline;
+	color: Red;
+}
+
+HR {
+	color: #DFE69E;
+	background-color: #DFE69E;
+	height: 2px;
+}
+
+img {
+	background-color: #FFFF9B;
+}
