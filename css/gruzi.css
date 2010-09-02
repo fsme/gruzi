@@ -81,3 +81,12 @@ HR {
 img {
 	background-color: #FFFF9B;
 }
+
+.topmsg {
+	font-family: "Lucida Console", "Courier New";
+	font-style: Normal;
+	text-align: Left;
+	font-size: 11pt;
+	position:absolute; top:10%; left:30%;
+}
+
