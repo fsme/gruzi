@@ -1,0 +1,38 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+open DVZ, "fetch -q -o - http://dovezu.ru/|";
+
+my %cargos;
+undef my $n;
+
+while (<DVZ>)
+{
+	s/(.*)(cargo[0-9][0-9][0-9][0-9].html)(.*)/$2/;
+	chomp;
+	$cargos{$_} = $n++ if /cargo[0-9][0-9][0-9][0-9].html/;
+}
+
+close DVZ;
+
+open PAT, "/home/taxi/www/trunk/dovezu/rate.html";
+open CARGO, ">/home/taxi/www/trunk/dovezu/index.html";
+
+
+while (<PAT>) {
+	last if /-- CARGO --/;
+	print CARGO $_;
+}
+
+foreach my $key (keys %cargos)
+{
+	print CARGO "<p>", $key, " => ", $cargos{$key}, "</p>\n";
+}
+
+while (<PAT>) {
+	print CARGO $_;
+}
+
+close PAT;
+close CARGO;
